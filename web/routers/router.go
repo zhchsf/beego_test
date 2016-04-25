@@ -11,4 +11,7 @@ func init() {
     // beego.Include(&controllers.RedisController{})
     // beego.Router("/redis/go", &controllers.RedisController{},"get:Get")
     beego.Router("/redis", &controllers.RedisController{})
+
+    // beego.Include(&controllers.MongodbController{})
+    beego.Router("/mongodb", &controllers.MongodbController{})
 }
